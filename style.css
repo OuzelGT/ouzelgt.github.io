@@ -1,0 +1,209 @@
+/* Sliding heading animation */
+
+h1 {
+  text-shadow: 2px #333;
+  font-style: italic;
+  /* font-family: fantasy;
+  font-style: papyrus; */
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* ---------------------------- */
+
+body {
+  background-color: rgb(199, 201, 231);
+
+}
+
+main {
+  padding: 10px;
+}
+
+.funkybutt {
+  background-color: rgba(235, 188, 109, 0.71);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+article {
+  background-color: rgba(231, 227, 220, 0.71);
+  padding: 20px;
+  margin: 10 0 0 0;
+  border: 2px solid rgb(127, 22, 101);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.block {
+  display: block;
+
+  width: 100%;
+  text-align: center;
+  ;
+}
+
+.AIart {
+  background-color: rgba(118, 101, 114, 0.462);
+  padding: 10px;
+}
+
+/* responsive image gallery */
+.imgGall {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 20px 20px 0 20px;
+  /* border: 3px solid rgba(15, 15, 15, 0.568); */
+  /* background-color: rgba(118, 101, 114, 0.462); */
+  box-shadow: 3px rgba(51, 51, 51, 0.51);
+}
+
+div.gallery {
+  border: 2px solid rgba(196, 182, 132, 0.685);
+  border-radius: 20px 20px 0 20px;
+  background-color: rgba(245, 245, 220, 0.555);
+  margin: 20px 0 0 0;
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(226, 217, 151);
+}
+
+img {
+  height: 400px;
+  box-shadow: 2px rgba(0, 0, 0, 0.466);
+  border-radius: 20px 0 0 0;
+}
+
+div.gallery img {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 2px rgba(0, 0, 0, 0.466);
+  border-radius: 20px 0 0 0;
+
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imgContainer {
+  padding: 0 6px;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .imgContainer {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imgContainer {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-md {
+  display: block;
+}
+
+/* ----------------------- */
+
+/* want to keep our vertical navbar in its box */
+nav ul.vert-navbar {
+  border: 1px solid #333;
+  width: 50%;
+  margin: 1rem auto;
+  background-color: rgb(0, 0, 0);
+  display: block;
+}
+
+/* for our horizontal nav bar we remove the 50% width */
+nav ul.hor-navbar {
+  border: 1px solid #333;
+
+  margin: 1rem auto;
+  background-color: rgb(0, 0, 0);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hor-navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+nav a:focus {
+  /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eaJ1JfdJquZTpgUDYIpA9AHaE7%26pid%3DApi%26h%3D160&f=1&ipt=90dc0dceb6539df2ded41f1c3199d65e0c0c74d20dc23f8a14d7e18f78c0859a&ipo=images); */
+  color: rgb(219, 191, 31);
+}
+
+nav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* the i tag refers to the icons */
+nav a:hover i {
+  color: rgb(241, 224, 68);
+}
