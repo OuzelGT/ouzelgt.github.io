@@ -1,0 +1,27 @@
+/* simple FLEXBOX stuff */
+.container {
+    border: solid 2px green;
+    display: flex;
+    padding: 5px;
+
+}
+
+.item {
+    border: solid 2px rgb(183, 33, 173);
+    margin: 5px;
+    padding: 5px;
+    font-size: larger;
+    flex-flow: wrap;
+    max-height: fit-content;
+    max-width: 100%;
+    box-shadow: 2px rgba(0, 0, 0, 0.466);
+    border-radius: 20px 0 0 0;
+}
+
+/* ---------------------- */
+img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
