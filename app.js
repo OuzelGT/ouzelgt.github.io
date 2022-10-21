@@ -1,0 +1,3 @@
+function funkybuttClick() {
+    location.reload();
+}
