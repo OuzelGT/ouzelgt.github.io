@@ -48,7 +48,7 @@ main {
 
 .funkybutt {
   background-color: rgb(236, 201, 89);
-  /* position: absolute; */
+  position: absolute;
   right: 60px;
   top: 25px;
   border-radius: 50%;
@@ -112,20 +112,44 @@ div.gallery:hover {
 .container {
   border: solid 2px green;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 
 .item {
+  /* flex-basis: 20%; */
+  flex: auto;
   border: solid 2px rgb(183, 33, 173);
   margin: 5px;
   padding: 5px;
   font-size: larger;
-  flex-flow: wrap;
   max-height: fit-content;
   max-width: 100%;
   box-shadow: 2px rgba(0, 0, 0, 0.466);
   border-radius: 20px 0 0 0;
+}
+
+.Ftextbox {
+
+  flex: auto;
+  max-height: 40%;
+}
+
+.circle {
+  gap: 30px;
+  width: 300px;
+  height: 300px;
+  margin-left: 0px;
+  background-color: mediumseagreen;
+  transition: 1s;
+}
+
+.circle:hover {
+  gap: 30px;
+  margin-left: 40px;
+  background-color: rgb(224, 61, 61);
+  border-radius: 50%;
 }
 
 /* ---------------------- */
